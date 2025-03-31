@@ -42,7 +42,7 @@ export default function ProductDetails() {
   ];
 
   return (
-    <div className="border-t border-gray-200 p-4 pt-0 w-full max-w-md ">
+    <div className="border-t border-gray-200 p-4 pt-0 w-full  ">
       {sections.map((section, index) => (
         <AccordionItem
           key={index}

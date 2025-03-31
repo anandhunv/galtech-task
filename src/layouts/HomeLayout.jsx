@@ -25,6 +25,7 @@ export default function HomeLayout() {
       <NutritionalNeeds />
       <ProvenResults />
       <WhyZivo />
+      
       <StartYourJourney />
       <FAQSection />
     </>

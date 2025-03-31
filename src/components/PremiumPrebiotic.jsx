@@ -17,20 +17,20 @@ const benefits = [
 
 const PremiumPrebiotic = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:justify-between bg-[#f5f5eb] px-6 md:px-10 py-8 border border-gray-300 2xl:max-w-7xl 2xl:mx-auto">
+    <div className="flex flex-col md:flex-row items-center md:justify-between bg-gray-100 px-6 md:px-10 py-8 border border-gray-200 2xl:max-w-7xl 2xl:mx-auto">
       {/* Left Section */}
       <div className="text-center md:text-center  flex justify-center w-full md:w-1/2 mb-6 md:mb-0">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-[#1F3D0C] font-grotesque">
+        <h2 className="text-4xl md:text-3xl font-extrabold text-[#1F3D0C] font-grotesque">
           PREMIUM PREBIOTIC
         </h2>
       </div>
 
       {/* Right Section */}
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <p className="text-black text-xs md:text-base mb-4 uppercase mx-auto md:mx-0 w-11/12 neue-haas-normal ">
+        <p className="text-black text-sm md:text-base mb-4 uppercase mx-auto md:mx-0 md:w-11/12 neue-haas-normal ">
           Zivolife is 100% klebsormidium flaccidum var ZL01, a proprietary strain of microalgae.
         </p>
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6">
+        <div className="flex md:flex-row  flex-wrap-reverse md:flex-wrap items-center justify-center md:justify-start gap-8 md:gap-6">
           {benefits.map((item) => (
             <div key={item.id} className="flex flex-col items-center ">
               <img src={item.icon} alt={item.label} className="w-10 h-10" />

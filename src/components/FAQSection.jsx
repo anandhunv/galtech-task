@@ -19,13 +19,14 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-8 bg-white neue-haas-normal">
+    <div className="max-w-7xl mx-auto md:p-8 p-2 bg-white neue-haas-normal">
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left Section */}
         <div>
-          <h2 className="text-2xl md:text-4xl  text-[#1F3D0C] neue-haas-normal">
-            <span className="block md:hidden font-bold" >
-              Everything you need to know about klebsormidium flaccidum var. ZL01
+          <h2 className="text-3xl md:text-4xl  text-[#1F3D0C] neue-haas-normal">
+            <span className="block md:hidden" >
+              Everything you need to know about <span className="font-bold">klebsormidium <br /> flaccidum var. ZL01</span>
             </span>
             <span className="hidden md:block">
               For The <span className="font-extrabold">Curious.</span>
@@ -43,9 +44,8 @@ export default function FAQSection() {
               >
                 {question}
                 <FaChevronDown
-                  className={`transition-transform duration-300 ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
+                  className={`transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               {openIndex === index && (

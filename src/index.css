@@ -81,6 +81,50 @@ body {
   font-style: normal;
 }
 
+/* font-family: 'Darker Grotesque'; */
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('/src/assets/fonts/grotesque/DarkerGrotesque-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('/src/assets/fonts/grotesque/DarkerGrotesque-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('/src/assets/fonts/grotesque/DarkerGrotesque-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('/src/assets/fonts/grotesque/DarkerGrotesque-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('/src/assets/fonts/grotesque/DarkerGrotesque-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('/src/assets/fonts/grotesque/DarkerGrotesque-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
 
 /* Define Font Variable in Tailwind v4 */
 @theme {
@@ -94,6 +138,47 @@ body {
 
 
 }
+
+@theme {
+  --font-grotesque-light: "Darker Grotesque", sans-serif;
+  --font-grotesque-regular: "Darker Grotesque", sans-serif;
+  --font-grotesque-medium: "Darker Grotesque", sans-serif;
+  --font-grotesque-semibold: "Darker Grotesque", sans-serif;
+  --font-grotesque-bold: "Darker Grotesque", sans-serif;
+  --font-grotesque-extrabold: "Darker Grotesque", sans-serif;
+}
+
+
+.font-grotesque-light {
+  font-family: var(--font-grotesque-light);
+  font-weight: 300;
+}
+
+.font-grotesque-regular {
+  font-family: var(--font-grotesque-regular);
+  font-weight: 400;
+}
+
+.font-grotesque-medium {
+  font-family: var(--font-grotesque-medium);
+  font-weight: 500;
+}
+
+.font-grotesque-semibold {
+  font-family: var(--font-grotesque-semibold);
+  font-weight: 600;
+}
+
+.font-grotesque-bold {
+  font-family: var(--font-grotesque-bold);
+  font-weight: 700;
+}
+
+.font-grotesque-extrabold {
+  font-family: var(--font-grotesque-extrabold);
+  font-weight: 800;
+}
+
 
 
 
@@ -138,8 +223,18 @@ body {
   @theme {
     --text-4xl: 2.70rem; /* 36px */
     --text-4xl--line-height: 1.1111; /* Default calculation */
+    --text-4xlpr: 2.09rem; /* 36px */
+    --text-4xlpr--line-height: 1.1111; /* Default calculation */
   }
   .text-4custom {
     font-size: var(--text-4xl) /* 2.25rem = 36px */;
     line-height: var(--tw-leading, var(--text-4xl--line-height) /* calc(2.5 / 2.25) ≈ 1.1111 */);
+}
+
+
+.text-provenresult {
+
+  font-size: var(--text-4xlpr) /* 2.25rem = 36px */;
+  line-height: var(--tw-leading, var(--text-4xlpr--line-height) /* calc(2.5 / 2.25) ≈ 1.1111 */);
+
 }

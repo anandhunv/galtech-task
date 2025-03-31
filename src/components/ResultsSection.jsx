@@ -112,10 +112,10 @@ ReviewCard.propTypes = {
 
 const ResultsSection = () => {
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 text-center">
+    <section className="bg-white py-16 px-0.5 md:px-6 text-center">
       <div className="max-w-7xl mx-auto">
-<div className="leading-none">
-        <h2 className="text-3xl md:text-5xl font-bold text-[#1F3D0C] font-grotesque">
+<div className="leading-none ">
+        <h2 className="text-3xl md:text-5xl text-nowrap font-bold text-[#1F3D0C] font-grotesque">
           RESULTS PEOPLE SAW
         </h2>
         <h3 className="text-3xl md:text-5xl font-bold text-[#1F3D0C]  font-grotesque">
@@ -123,7 +123,7 @@ const ResultsSection = () => {
         </h3>
         </div>
         
-        <p className=" mt-4 max-w-2xl text-xl mx-auto neue-haas-normal flex flex-col text-black">
+        <p className=" mt-4 max-w-2xl md:text-xl mx-auto neue-haas-normal flex flex-col text-black">
        <span> Don't just take our word for it! See the life</span>   <span>changing results of others.</span>
         </p>
 

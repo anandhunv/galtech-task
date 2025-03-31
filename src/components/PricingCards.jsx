@@ -11,7 +11,7 @@ export default function PricingCards() {
   const [selectedPlan, setSelectedPlan] = useState("2 POUCHES");
 
   return (
-    <div className="grid grid-cols-3 gap-6 w-full max-w-3xl mx-auto">
+    <div className="grid grid-cols-3 md:gap-6 gap-1 w-full max-w-3xl mx-auto px-2 mt-10">
       {plans.map((plan, index) => (
         <div
           key={index}
@@ -24,7 +24,7 @@ export default function PricingCards() {
         >
           {/* Save Badge */}
           <div
-            className={`absolute -top-4 left-1/2 transform -translate-x-1/2 px-3 py-1 text-nowrap rounded-md text-sm font-bold ${
+            className={`absolute -top-4 left-1/2 transform -translate-x-1/2 md:px-3 px-1 py-0.5 md:py-1 text-nowrap rounded-md text-sm font-bold ${
               selectedPlan === plan.name
                 ? "bg-[#2E3F17] text-white"
                 : "bg-gray-200 text-gray-700"
@@ -35,15 +35,15 @@ export default function PricingCards() {
 
           {/* Pricing & Title */}
           <div className="flex flex-col justify-center items-center mb-4 font-grotesque">
-            <p className="font-bold text-2xl text-nowrap uppercase text-[#2E3F17] mt-4">{plan.name}</p>
+            <p className="font-bold md:text-2xl text-nowrap uppercase text-[#2E3F17] md:mt-4">{plan.name}</p>
             <span>
               <span className="text-base line-through text-gray-500">{plan.oldPrice}</span>
-              <span className="text-2xl font-bold text-[#2E3F17] ml-2">{plan.newPrice}</span>
+              <span className="md:text-2xl font-bold text-[#2E3F17] ml-2">{plan.newPrice}</span>
             </span>
           </div>
 
-          {/* Product Images (Stacking Effect) */}
-          <div className="relative flex justify-center   items-center h-24">
+          {/* Product Images  */}
+          <div className="relative flex justify-center   items-center md:h-24 h-20">
             {[...Array(plan.count)].map((_, i) => (
               <img
                 key={i}

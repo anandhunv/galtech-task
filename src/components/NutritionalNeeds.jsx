@@ -3,60 +3,52 @@ import bottleImage from "../assets/images/bottle.png";
 import { IoHeartOutline, IoShieldCheckmark } from "react-icons/io5";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { LuHeartHandshake } from "react-icons/lu";
+import InfoBoxes from "./InfoBoxes";
 
 const NutritionNeeds = () => {
   return (
-    <div className="bg-gradient-to-b from-[#1F3D0C] via-[#1F3D0C] to-[#1F3D0C] text-white px-">
-      {/* Main Section: Text & Image */}
-      <div className="flex flex-col lg:flex-row items-center">
+    <section className="bg-gradient-to-b from-[#1F3D0C] via-[#1F3D0C] to-[#1F3D0C] text-white 2xl:max-w-7xl 2xl:mx-auto ">
+      {/* Main Section */}
+      <div className="flex flex-col-reverse lg:flex-row items-center">
         {/* {left} */}
-      <div className="lg:w-3/5 text-left px-16 pt-16 ">
-          <h2 className="text-4xl font-bold uppercase flex flex-col font-grotesque">ALL YOUR NUTRITIONAL <span>NEEDS</span></h2>
+        <div className="lg:w-3/5 text-left lg:px-12 px-5 lg:pt-16  mt-8">
+          <h2 className="text-5xl font-bold uppercase flex flex-col font-grotesque-bold">
+            <span className="lg:block hidden">ALL YOUR NUTRITIONAL</span>
+            <span className="lg:hidden block text-[40px]">The Better
+            </span>
+            <span className="lg:block hidden">NEEDS</span>
+            <span className="lg:hidden block text-[40px]">
+              Microalgae</span></h2>
+
 
           {/* Info Boxes */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-            {[...Array(4)].map((_, index) => (
-              <div key={index} className="bg-white flex   p-4 border border-gray-300">
-                <div className="  flex  items-center p-1.5">
-                <LuHeartHandshake size={22} className="text-[#1F3D0C] " />
-                </div>
-                <div>
-                <h3 className="font-bold text-2xl flex items-center text-[#1F3D0C] gap-2  font-grotesque">
-                   FIGHTS INFLAMMATION
-                </h3>
-                <p className="text-base text-black mt-1 neue-haas-normal font-medium ">
-                  Sharpen your mind and enhance concentration, helping you perform your best in all tasks, and enhance concentration, helping.
-                </p>
-                </div>
-                
-              </div>
-            ))}
-          </div>
+          <InfoBoxes />
+
         </div>
 
         {/* Right: Image Section */}
-        {/* Right: Image Section */}
-<div className="lg:w-2/5  flex justify-end ">
-  <img src={bottleImage} alt="Zivolife Bottle" className="object-contain max-h-screen w-[450px]" />
-</div>
+        <div className="lg:w-2/5 flex justify-end">
+          <img src={bottleImage} alt="Zivolife Bottle" className="object-cover w-[120%] lg:w-full" />
+        </div>
+
 
       </div>
 
       {/* Bottom Section: Button */}
       <div className="flex flex-col items-center justify-center p-20 pt-5  ">
         <div className=" w-full flex justify-center" >
-        <button className="bg-white text-black px-6  py-3 w-1/3  font-grotesque text-2xl  font-bold rounded-full shadow-md hover:bg-gray-200 transition">
-          SHOP ZIVOLIFE
-        </button>
+          <button className="bg-white text-black px-6  py-3 lg:w-1/3  font-grotesque text-2xl  font-bold rounded-full shadow-md hover:bg-gray-200 transition">
+            SHOP ZIVOLIFE
+          </button>
         </div>
 
         <div className="flex justify-center items-center gap-0.5 text-xs mt-2.5">
-           <IoShieldCheckmark size={18} className="text-white flex-shrink-0" />
-                            <span className="whitespace-nowrap  font-bold neue-haas-medium">60 Day Money-Back Guarantee</span>
+          <IoShieldCheckmark size={18} className="text-white flex-shrink-0" />
+          <span className="whitespace-nowrap  font-bold flex "><span className="lg:block hidden">60</span><span className="lg:hidden block">30</span> Day Money-Back Guarantee</span>
+        </div>
       </div>
-      </div>
-     
-    </div>
+
+    </section>
   );
 };
 
