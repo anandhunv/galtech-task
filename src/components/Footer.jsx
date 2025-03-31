@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaCcVisa, FaCcMastercard, FaCcPaypal, FaGooglePay, FaApplePay, FaCcAmex, FaCcDiscover } from "react-icons/fa";
 import logo from "../assets/images/logo.png";
+import image from "../assets/images/payment.png";
+
 import { FaMeta } from "react-icons/fa6";
 
 const Footer = () => {
@@ -74,15 +76,19 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Payment Methods */}
-        <div className="flex space-x-4 text-2xl">
-          <FaCcVisa className="hover:text-green-300 cursor-pointer" />
+        <div className="flex space-x-4 text-2xl  ">
+          {/* <FaCcVisa className="hover:text-green-300 cursor-pointer" />
           <FaCcMastercard className="hover:text-green-300 cursor-pointer" />
           <FaCcPaypal className="hover:text-green-300 cursor-pointer" />
           <FaGooglePay className="hover:text-green-300 cursor-pointer" />
           <FaApplePay className="hover:text-green-300 cursor-pointer" />
           <FaCcAmex className="hover:text-green-300 cursor-pointer" />
           <FaCcDiscover className="hover:text-green-300 cursor-pointer" />
-          <FaMeta className="hover:text-green-300 cursor-pointer" />
+          <FaMeta className="hover:text-green-300 cursor-pointer" /> */}
+
+          <img src={image} alt="" className="w-44"/>
+          <img src={image} alt="" className="w-44"/>
+
         </div>
 
         {/* Privacy Text */}
